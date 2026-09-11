@@ -3,7 +3,13 @@ import { printOut, newLine } from "../../common/script/utils.mjs";
 
 
 printOut("--- Part 1 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
+//* Put your code below here!*/
+let originalExpression = "2 + 3 * 2 - 4 * 6";
+let newExpression = "2 + 3 * (2 - 4) * 6";
+let answer = 2 + 3 * (2 - 4) * 6;
+printOut(originalExpression);
+printOut(newExpression);
+printOut(answer);
 printOut(newLine);
 
 printOut("--- Part 2 ----------------------------------------------------------------------------------------------");

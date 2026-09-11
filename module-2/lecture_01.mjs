@@ -8,5 +8,9 @@ printOut(TextInfo);
 let a = 5; 
 printOut(a);
 
+const valuePI = 3.14;
+a = valuePI;
+printOut(a);
+
 
 
