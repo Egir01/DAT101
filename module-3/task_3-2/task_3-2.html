@@ -10,9 +10,19 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
-    </ol>
+      <li>[In part 1, is it possible to solve the problem using a single "for" loop?]</li>
+      <p>[you could use one loop that tracks two counters simultaneously (one going up, one going down) using a comma in the loop's update expression:]</p>
+      <li>[In part 2, can we create what is known as an "infinite" loop within the condition of the "while" loop?]</li>
+    <p>[Yes, you can create an infinite loop using a condition that is always true, such as while (true). A break statement or another exit condition can be used to stop the loop.]</p>
+      <li>[Discuss briefly how quickly or slowly a computer might be able to compute this, considering the
+number of guesses and the time it takes. How does the program behave while it is guessing? Can
+the program perform other tasks concurrently?]</li>
+<p>[Modern computer can generate and compare millions of random numbers per second, so the average run finishes in roughly tens to a few hundred milliseconds.]</p>
+  <p>[JavaScript runs on a single thread, so the loop blocks everything else until it finishes. If the loop ran for long enough, the browser tab would freeze: you couldn't click buttons, scroll, or see page updates until it was done.]</p>
+  <li>[Explain the relationship between rows and columns in nested "for" loops. Can we, for instance,
+change the order, considering rows to be innermost or columns to be innermost, or does this not
+matter?]</li>
+<p>[Swapping the loops still visits all 63 cells, but it changes the output order. The program would complete each column before moving to the next, producing the wrong table layout. Therefore, rows should be the outer loop and columns the inner loop when printing a table.]</p>
     <script type="module" src="./task_3-2.mjs" defer></script>
   </body>
 </html>
